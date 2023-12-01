@@ -4,7 +4,7 @@ defmodule AOC.Day01b do
   @type calibration_line :: String.t()
   @type calibration_sum :: integer()
   @type calibration_value :: integer()
-  @type wordy_number() :: String.t()
+  @type wordy_number :: String.t()
   @type word :: String.t()
 
   @matcher Regex.compile!("(?=(\\d|one|two|three|four|five|six|seven|eight|nine))")
