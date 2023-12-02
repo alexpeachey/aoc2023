@@ -38,12 +38,6 @@ defmodule AOC.Day01b do
     |> String.to_integer()
   end
 
-  @spec extract_digits(calibration_line()) :: calibration_line()
-  def extract_digits(line) do
-    line
-    |> String.replace(~r/[^\d)]/, "", global: true)
-  end
-
   @spec first_and_last(calibration_line()) :: calibration_line()
   def first_and_last(line) do
     "#{String.first(line)}#{String.last(line)}"
